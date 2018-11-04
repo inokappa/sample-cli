@@ -1,5 +1,6 @@
 require "thor"
-require "aws-sdk"
+require "aws-sdk-ec2"
+require "aws-sdk-s3"
 require "sample_cli/version"
 require "sample_cli/stub"
 require "sample_cli/cli"
