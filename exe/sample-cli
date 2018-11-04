@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require "sample_cli"
+require 'sample_cli'
 
 SampleCli::CLI.start

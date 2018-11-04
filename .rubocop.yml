@@ -1,0 +1,93 @@
+AllCops:
+  TargetRubyVersion: 2.1
+
+Layout/IndentHeredoc:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: false
+
+Lint/HandleExceptions:
+  Enabled: false
+
+Lint/UselessAssignment:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 50
+
+Metrics/BlockLength:
+  Max: 60
+
+Metrics/ClassLength:
+  Max: 130
+
+Metrics/CyclomaticComplexity:
+  Max: 15
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/ModuleLength:
+  CountComments: false
+  Max: 200
+
+Metrics/PerceivedComplexity:
+  Max: 15
+
+Style/PredicateName:
+  Enabled: false
+
+Performance/StringReplacement:
+  Enabled: false
+
+Security/Eval:
+  Enabled: false
+
+Style/Alias:
+  Enabled: false
+
+Style/BarePercentLiterals:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/MethodMissing:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/NumericLiteralPrefix:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/StabbyLambdaParentheses:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/SymbolProc:
+  Enabled: false
+
+Style/YodaCondition:
+  Enabled: false

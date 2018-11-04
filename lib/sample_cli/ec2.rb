@@ -6,7 +6,7 @@ module SampleCli
 
     def instances
       instances = []
-      get_instances.each do |r|
+      list_instances.each do |r|
         r.instances.each do |i|
           instances << i.instance_id
         end
@@ -16,7 +16,7 @@ module SampleCli
 
     private
 
-    def get_instances
+    def list_instances
       ec2.describe_instances.reservations
     end
   end

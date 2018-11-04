@@ -1,6 +1,5 @@
-# require "bundler/setup"
-require "rspec"
-require "sample_cli"
+require 'rspec'
+require 'sample_cli'
 
 Aws.config.update(stub_responses: true)
 ENV['AWS_PROFILE'] = 'dummy_profile'

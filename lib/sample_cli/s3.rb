@@ -6,7 +6,7 @@ module SampleCli
 
     def buckets
       buckets = []
-      get_buckets.each do |b|
+      list_buckets.each do |b|
         buckets << b.name
       end
       buckets
@@ -14,7 +14,7 @@ module SampleCli
 
     private
 
-    def get_buckets
+    def list_buckets
       s3.list_buckets.buckets
     end
   end
