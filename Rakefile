@@ -12,7 +12,7 @@ end
 
 task spec: 'spec:all'
 namespace :spec do
-  task all: ['spec:tests']
+  task all: ['spec:tests', 'spec:rubocop']
   task tests: tests
 
   tests.each do |test|
