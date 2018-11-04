@@ -9,6 +9,19 @@ Aws.config[:s3] = {
           name: 'bar'
         }
       ]
+    },
+    list_objects_v2: {
+      contents: [
+        {
+          key: 'foo'
+        },
+        {
+          key: 'bar'
+        },
+        {
+          key: 'baz/key'
+        }
+      ]
     }
   }
 }

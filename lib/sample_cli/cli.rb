@@ -24,5 +24,12 @@ module SampleCli
       s3 = SampleCli::S3.new
       puts s3.buckets
     end
+
+    desc 'objects', 'list up S3 objects.'
+    option :bucket, type: :string, aliases: '-b', desc: 'specify S3 bucket.'
+    def objects
+      s3 = SampleCli::S3.new
+      puts s3.objects(options[:bucket])
+    end
   end
 end

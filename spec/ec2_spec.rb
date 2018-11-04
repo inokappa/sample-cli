@@ -7,7 +7,7 @@ describe 'sample_cli check subcommand instances' do
   end
 
   it 'have instance ids by cli' do
-    output = capture(:stdout) { SampleCli::CLI.new.instances }
+    output = capture(:stdout) { SampleCli::CLI.start(%w{instances}) }
     expect(output).to eq("i-ec12345a\ni-ec12345b\n")
   end
 end

@@ -6,19 +6,19 @@ describe 'sample_cli check version' do
   end
 
   it 'has a version number by cli' do
-    output = capture(:stdout) { SampleCli::CLI.new.version }
+    output = capture(:stdout) { SampleCli::CLI.start(%w{version}) }
     expect(output).to match(SampleCli::VERSION)
   end
 end
 
 describe 'sample_cli check subcommand input' do
   it 'has a word by cli' do
-    output = capture(:stdout) { SampleCli::CLI.new.input('hello') }
+    output = capture(:stdout) { SampleCli::CLI.start(%w{input hello}) }
     expect(output).to match(/hello/)
   end
 
   it 'has a error message by cli' do
-    output = capture(:stdout) { SampleCli::CLI.new.input }
+    output = capture(:stdout) { SampleCli::CLI.start(%w{input}) }
     expect(output).to match(/Please input `word`/)
   end
 end
