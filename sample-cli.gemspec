@@ -24,5 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
 
   spec.add_dependency "thor"
-  spec.add_dependency "aws-sdk"
+  spec.add_dependency "aws-sdk-ec2"
+  spec.add_dependency "aws-sdk-s3"
 end
