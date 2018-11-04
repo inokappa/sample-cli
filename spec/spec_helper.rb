@@ -3,6 +3,8 @@ require "rspec"
 require "sample_cli"
 
 Aws.config.update(stub_responses: true)
+ENV['AWS_PROFILE'] = 'dummy_profile'
+ENV['AWS_REGION'] = 'us-east-1'
 
 def capture(stream)
   begin
